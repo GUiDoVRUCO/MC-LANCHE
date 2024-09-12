@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's - O Melhor Cardápio do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#promotions">Promoções</a></li>
+                        <img src="IMG MC LANHCE/mc png.png" alt="McDonald's Logo" class="logo">
+                        <li><a href="#locations">Localizações</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo ao McDonald's</h1>
+            <p>Experimente o sabor que conquista!</p>
+            <button id="exploreBtn">Explorar</button>
+        </div>
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ywtkgf9b.json" background="transparent"
+            speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Cardápio</h2>
+            <div class="menu-buttons">
+                <button id="show-burgers">Sanduíches</button>
+                <button id="show-drinks">Bebidas</button>
+                <button id="show-sides">Acompanhamentos</button>
+                <button id="show-desserts">Sobremesas</button>
+            </div>
+            <div class="menu-content">
+                <div id="burgers" class="menu-grid hidden">
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/BACON.png" alt="Burger com Bacon">
+                        <h3>Burger com Bacon</h3>
+                        <p>Suculento hambúrguer com bacon crocante e queijo derretido.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/Cheeseburger.jpg" alt="Cheeseburger">
+                        <h3>Cheeseburger</h3>
+                        <p>Hambúrguer clássico com queijo e picles.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/Double Beef.jpg" alt="Double Beef">
+                        <h3>Double Beef</h3>
+                        <p>Dois hambúrgueres de carne com queijo e molho especial.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/McChicken.png" alt="McChicken">
+                        <h3>McChicken</h3>
+                        <p>Delicioso frango empanado com maionese.</p>
+                    </div>
+                </div>
+                <div id="drinks" class="menu-grid hidden">
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/MILKSAHKE" alt="Milkshake">
+                        <h3>Milkshake</h3>
+                        <p>Milkshake cremoso em diversos sabores.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/Refrigerante.webp" alt="Refrigerante">
+                        <h3>Refrigerante</h3>
+                        <p>Seleção de refrigerantes gelados.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/Suco Natural" alt="Suco">
+                        <h3>Suco Natural</h3>
+                        <p>Suco fresco de frutas variadas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/Água" alt="Água">
+                        <h3>Água</h3>
+                        <p>Água mineral para refrescar.</p>
+                    </div>
+                </div>
+                <div id="sides" class="menu-grid hidden">
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/BATATA" alt="Batata Frita">
+                        <h3>Batata Frita</h3>
+                        <p>Batata frita crocante e deliciosa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/nugget.jpg" alt="Nuggets">
+                        <h3>Nuggets</h3>
+                        <p>Nuggets de frango crocantes.</p>
+                    </div>
+                </div>
+                <div id="desserts" class="menu-grid hidden">
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/salada" alt="Salada">
+                        <h3>Salada</h3>
+                        <p>Deliciosa Salada.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./IMG MC LANHCE/Sorvete" alt="Sorvete">
+                        <h3>Sorvete</h3>
+                        <p>Sorvete em vários sabores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promotions" class="promo-slider">
+        <div class="container">
+            <h2>Promoções Exclusivas</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./IMG MC LANHCE/combo big.jpg" alt="Promoção 1">
+                    <p>Combo Big Mac com 20% de desconto!</p>
+                </div>
+                <div class="slide">
+                    <img src="./IMG MC LANHCE/promo sorvete.webp" alt="Promoção 2">
+                    <p>Peça um McFlurry e ganhe um Milkshake grátis!</p>
+                </div>
+                <div class="slide">
+                    <img src="path/to/promo3.jpg" alt="Promoção 3">
+                    <p>Desconto especial para novos clientes!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="locations">
+        <div class="container">
+            <h2>Nossas Localizações</h2>
+            <div id="map"></div>
+            <div class="location-list">
+                <div class="location">
+                    <h3>Loja 1</h3>
+                    <p>Rua Exemplo, 123 - MCZ</p>
+                    <p>(55) 1234-5678</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>O McDonald's é uma das maiores cadeias de restaurantes de fast-food do mundo. Fundado em 1940, nós
+                servimos comidas de qualidade com rapidez e eficiência.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 McDonald's. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

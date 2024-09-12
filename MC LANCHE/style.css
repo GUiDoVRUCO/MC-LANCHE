@@ -1,0 +1,304 @@
+/* Estilo básico da header-nav */
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Alinha a logo e a navegação verticalmente */
+    position: relative;
+}
+
+/* Estilo do menu */
+nav {
+    margin-bottom: 20px;
+    /* Espaçamento abaixo da navegação */
+}
+
+/* alterei aqui //kauã(addc justify-content, align-items) */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centraliza a navegação */
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 70px;
+    /* Espaçamento entre os itens do menu */
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover nos links do menu */
+nav a:hover {
+    color: #ffcc00;
+    /* Altera a cor do texto ao passar o mouse */
+    transform: translateY(-5px);
+    /* Move o link para cima */
+}
+
+/* Adiciona uma animação de linha ao passar o mouse sobre o item do menu */
+nav ul li:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    /* Espessura da linha animada */
+    background: #ffcc00;
+    /* Cor da linha */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+nav ul li:hover::before {
+    transform: scaleX(1);
+}
+
+/* Remove o efeito de fundo amarelo do header, mantendo apenas os itens do menu */
+header {
+    background: #ff0000;
+    /* Mantém o fundo original do header */
+    padding: -10px 0;
+    text-align: center;
+    /* Centraliza o conteúdo dentro do header */
+    position: relative;
+}
+
+/* Estilo do logo com efeito de transição */
+.logo {
+    width: 70px;
+    /* Tamanho da logo */
+    margin: 20px auto;
+    /* Espaçamento ao redor da logo */
+    display: block;
+    /* Faz com que a logo se comporte como bloco, permitindo centralização */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+header:hover .logo {
+    transform: scale(1.1);
+    /* Aumenta a logo ao passar o mouse sobre o header */
+    filter: brightness(1.2);
+    /* Aumenta o brilho da logo ao passar o mouse */
+}
+
+/* Estilo da imagem da logo */
+.logo-img {
+    width: 80px;
+    /* Ajusta o tamanho da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Faz com que a imagem se comporte como bloco, permitindo centralização */
+    margin: 20px auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo da seção hero */
+.hero {
+    background: url('./IMG MC LANHCE/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão de exploração */
+#exploreBtn {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+#exploreBtn:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do menu */
+.menu {
+    padding: 40px 20px;
+    background: #f8f8f8;
+    text-align: center;
+    /* Centraliza o conteúdo da seção */
+    margin-top: 40px;
+    /* Adiciona espaço acima da seção */
+}
+
+.menu h2 {
+    margin-top: -30px;
+    /* Move o título para cima, ajuste conforme necessário */
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o conteúdo da grid */
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraliza os itens do menu */
+    width: auto;
+
+}
+
+.menu-item {
+    width: 23%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo do slider promocional */
+.promo-slider {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    /* Centraliza o conteúdo da seção */
+    margin-top: 40px;
+    /* Adiciona espaço acima da seção */
+}
+
+.promo-slider h2 {
+    margin-top: -30px;
+    /* Move o título para cima, ajuste conforme necessário */
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o slider */
+    overflow: auto;
+}
+
+.slide {
+    min-width: 300px;
+    margin: 0 10px;
+    flex: 0 0 auto;
+}
+
+/* Estilo das localizações */
+.locations {
+    padding: 40px 20px;
+    text-align: center;
+    /* Centraliza o conteúdo da seção */
+    margin-top: 40px;
+    /* Adiciona espaço acima da seção */
+}
+
+.locations h2 {
+    margin-top: -30px;
+    /* Move o título para cima, ajuste conforme necessário */
+}
+
+#map {
+    height: 300px;
+    background: #e5e5e5;
+    margin: 0 auto;
+    /* Centraliza o mapa */
+}
+
+.location-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza a lista de localizações */
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+/* Estilo do footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
