@@ -73,7 +73,7 @@ nav ul li:hover::before {
 header {
     background: #ff0000;
     /* Mantém o fundo original do header */
-    padding: -10px 0;
+    padding: 0;
     text-align: center;
     /* Centraliza o conteúdo dentro do header */
     position: relative;
@@ -199,7 +199,6 @@ header:hover .logo {
     justify-content: center;
     /* Centraliza os itens do menu */
     width: auto;
-
 }
 
 .menu-item {
@@ -301,4 +300,65 @@ footer ul {
 footer ul li {
     display: inline;
     margin: 0 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    nav ul li {
+        margin: 0 20px;
+    }
+    
+    .menu-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-buttons button {
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .menu-buttons {
+        flex-direction: column;
+    }
+
+    .menu-buttons button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .promo-slider .slider {
+        flex-direction: column;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
 }
